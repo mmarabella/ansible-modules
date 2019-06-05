@@ -1,0 +1,10 @@
+---
+- name: custom module practice
+  hosts: all
+  tasks:
+    - name: test module
+      mod:
+        message: "message from play" 
+      register: result
+
+    - debug: var=result
